@@ -2,7 +2,7 @@ const debug = process.env.NODE_ENV !== "production";
 const webpack = require("webpack");
 
 module.exports = {
-  context: __dirname,
+  context: __dirname + "/src",
   devtool: debug ? "inline-sourcemap" : null,
   entry: "./entry.js",
   output: {
