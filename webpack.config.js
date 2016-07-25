@@ -2,9 +2,9 @@ const debug = process.env.NODE_ENV !== "production";
 const webpack = require("webpack");
 
 module.exports = {
-  context: __dirname + "/src",
+  context: __dirname,
   devtool: debug ? "inline-sourcemap" : null,
-  entry: "./entry.js",
+  entry: "./src/entry.js",
   output: {
     path: __dirname + "/dist",
     filename: "bundle.js"
